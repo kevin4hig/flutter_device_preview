@@ -2,15 +2,18 @@ name: device_preview
 version: 1.2.0
 description: Approximate how your Flutter app looks and performs on another device.
 homepage: https://github.com/aloisdeniel/flutter_device_preview
+publish_to: none
 
 environment:
-  sdk: '>=3.3.0-0 <4.0.0'
+  sdk: ">=3.3.0-0 <4.0.0"
   flutter: ">=3.22.0"
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
+  flutter_localization:
+    git:
+      url: https://github.com/channdara/flutter_localization
+      ref: feature/try-update-intl
   provider: ^6.1.2
   device_frame: ^1.2.0
   freezed_annotation: ^2.4.1
@@ -23,5 +26,5 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^4.0.0
   build_runner: ^2.4.0
- # freezed: ^2.5.3
+  # freezed: ^2.5.3
   json_serializable: ^6.8.0
